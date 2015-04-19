@@ -1,6 +1,6 @@
 = Ementa curso de sistemas de alta perfomance
 Andre Fonseca <aoqfonseca@gmail.com>
-:description: Documento que descrever a ementa do curso de sistemas de alta perfomance
+:description: Documento que descreve a ementa do curso de sistemas de alta perfomance
 :doctype: article
 :appversion: 1.0.0
 :compat-mode:
