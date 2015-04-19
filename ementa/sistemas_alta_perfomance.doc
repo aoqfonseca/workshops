@@ -1,0 +1,95 @@
+= Ementa curso de sistemas de alta perfomance
+Andre Fonseca <aoqfonseca@gmail.com>
+:description: Documento que descrever a ementa do curso de sistemas de alta perfomance
+:doctype: article
+:appversion: 1.0.0
+:compat-mode:
+:experimental:
+:icons: font
+:listing-caption: Listing
+:sectnums:
+:toc:
+:toclevels: 3
+
+[abstract]
+{description}
+
+Objetivo do curso é através desse workshop mostrar como fazer sistemas que sejam capazes de lidar com grandes volumes de acesso utilizando poucos recursos de máquina, como cpu, memória, etc.
+
+
+NOTE: Pelo volume de informação, talvez seja interessane quebrar em duas partes.
+
+== Formato
+
+Duração de 8 horas com 1:30hs para almoço e duas pausas de 15 minutos: uma de manhã e o outra a tarde. O curso seria divido em 4 blocos.
+
+Em cada bloco um exercício prático acompanharia a ementar passada
+
+== Temas a serem abordados
+
+. Introdução
+..  O que são sistemas de alta perfomance
+.. Números de sistemas de alta perfomance
+.. Mito da máquina barata
+.. Porque se preocupar com perfomance
+
+. Linguagens e Perfomance
+.. Mal entendidos entre linguagem e desempenho
+.. Linguagens como fonte de ferramenta e controle
+
+. O que realmente faz a diferença
+.. Arquitetura
+.. Algoritmos
+
+. Arquiteturas em Geral
+.. Passagem por conceitos de arquitetura
+.. Pontos de falha
+.. Monolíticos versus micro serviços
+.. Trade offs
+.. Mitos de NoSQL
+.. Mitos do Não bloqueante
+.. Conhecendo bem as suas ferramentas
+
+. Algoritmos
+.. Introdução
+.. História da evolução dos algoritmos
+.. Medição
+.. Big O
+.. Estudo de casos
+
+. Medir, monitorar, melhorar
+.. Entendendo o ciclo
+.. Números não mentem e nos ensinam muito
+... O que é vazão
+... Conexões simultâneas
+... Break points
+... Conexões ativas
+... Tempos e atrasos
+... Custos de conexões
+.. Natureza do sistema
+.. Definindo cenários de testes
+... Os testes e a realidade do usuário
+... Falsos negativos e falsos positivos
+.. Desempenho fazendo parte do TDD
+
+. Ferramentas
+.. Profilers
+... Jmeter
+... AB - apache benchmark
+... Siege
+.. Funkload
+
+. Técnicas
+.. Escalando leitura
+... Caches
+... Páginas estáticas
+... Páginas dinâmicas
+... Páginas com conteúdos de tempo de cache diferentes
+... Load de imagem
+... Push e Poll
+.. Escalando a escrita
+... Modelos de dados e seus impacto
+... Filas
+... Threads e processos
+... Separando as lógicas
+... Pipelines
