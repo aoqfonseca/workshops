@@ -1,0 +1,18 @@
+[[_introducao]]
+== Introdução
+
+Muitos pensam que escrever sistemas eficazes, perfomáticos e resilientes são requisitos só para as grandes empresas da web como portais, redes sociais, etc. Porém, responder rápido a uma requisição, usar poucos recursos para atender bem e ser tolerante a falhas não devem ser requisitos de apenas *_grandes produtos_* com altos tráfegos e sim de todos que desejam entregar algo de qualidade para seu usuário.
+
+Nenhum usuário irá voltar se seu site demorar demais para responder ou não estiver disponível por algum serviço que ele dependa estiver fora ou o site cair devido um grande volume de acessos (exemplo: sites de ingressos).
+
+NOTE: Não precisa ser grande ou ter um número imenso de acesso para se preocupar com velocidade, resilienciar e vazão.
+
+
+include::section/basico.adoc[]
+include::section/sobre_perfomance.adoc[]
+include::section/sobre_resiliencia.adoc[]
+
+=== Resumo
+
+Entender que requisitos de robustez não são exclusividade de grandes sistemas e produtos. Hoje, no contexto que nos encontramos, é um requisito igual ao de testes, qualidade, etc.
+Conhecer os conceitos e como eles indicam é o primeiro passo para construir sistemas robustos.

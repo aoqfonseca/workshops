@@ -1,0 +1,6 @@
+
+==== Resiliência
+
+Existe quatro pilares que consideramos importante para definirmos um sistema de alto desempenho, escalável e resiliente. São eles: resiliência, tempo de resposta, vazão e quantidade de conexões ativas. Em cima disso, criamos um conjunto de notas e avaliações que nos permitem avaliar o quanto um sistema é robusto.
+
+Durante todo o material, sempre iremos utilizar e atuar dentro desses aspectos. Raramente existem outras características diferentes dessas que devemos levar em consideração. Quando isso acontece, indica que se tem algo bem específico.

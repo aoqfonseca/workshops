@@ -1,12 +1,10 @@
-= Sistemas Robustos: Alta perfomance e Resiliência
-:description: Escreva sistemas eficazes, eficiências e resilientes
+Sistemas Robustos: Alta perfomance e Resiliência
+================================================
 :doctype: book
-:appversion: 1.0.0
-:compat-mode:
-:listing-caption: Listing
-:sectnums:
+:docinfo:
 :toc:
-:toclevels: 3
-:front-cover-image: image:images/capa.jpg[width=1050,height=1600]
+:toclevels: 2
+:front-cover-image: image:apostila/images/capa.jpg[width=1050,height=1600]
 
-include::capitulos/prefacio.adoc
+include::capitulos/prefacio.adoc[]
+include::capitulos/01-introducao/introducao.adoc[]
