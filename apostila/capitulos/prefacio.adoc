@@ -1,0 +1,9 @@
+= Prefácio
+:doctype: book
+:toc:
+:toclevels: 2
+
+[preface]
+Seja bem vindo. A intenção aqui é mostrar ao leitor de uma forma bem prática como podemos construir sistemas que sejam rápidos e robustos. Rápidos no sentido de responderem a uma grande vazão, em pouco tempo, etc. Robustos por em caso de qualquer problema conseguem se restabelecer, não param de funcionar se algo no sua _stack_ falhar, e outras coisas.
+Tentaremos sempre que possível, colocar um exemplo real, um exercício feito a partir de um problema real, nada de foo e bar, nada de Petshops e agendas de curso. E claro, se falharmos, fica a vontade nos corrigir. E nas próximas edições lhe daremos todo o crédito.
+Esse é uma material colaborativo. Estará aberto no github.
