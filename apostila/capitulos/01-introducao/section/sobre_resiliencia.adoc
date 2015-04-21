@@ -1,6 +1,12 @@
 
 ==== Resiliência
 
-Existe quatro pilares que consideramos importante para definirmos um sistema de alto desempenho, escalável e resiliente. São eles: resiliência, tempo de resposta, vazão e quantidade de conexões ativas. Em cima disso, criamos um conjunto de notas e avaliações que nos permitem avaliar o quanto um sistema é robusto.
+Resiliência é um conceito que vêm da física. Significa capacidade que um objeto tem que voltar a sua forma original após uma deformação. Também está associada a quantidade movimento - não deforma, quase que devolvendo toda a quantidade de movimento, etc.
 
-Durante todo o material, sempre iremos utilizar e atuar dentro desses aspectos. Raramente existem outras características diferentes dessas que devemos levar em consideração. Quando isso acontece, indica que se tem algo bem específico.
+Resiliência para nós, é a capacidade de um sistema se recuperar de um falha. Simples assim. É o quanto o sistema consegue voltar a funcionar, se por exempo, o banco de dados _ficar fora_; e se o sistema consegue continuar funcionar com uma degradação mínima se algum _componente_  não estiver disponível ou responder com erro.
+
+NOTE: Tratar exceções (try e catchs, try e except) não é ser resiliente.
+
+Não estamos falando de simplesmente tratar as exceções do código - em alguns casos, bem ruins, até silenciá-las.  O que deve ficar do conceito é que tudo deve continuar funcionando mesmo que alguma parte falhe. O ideal reside em ser imperceptível para o usuário final.
+
+Milhares de técnicas surgem a partir desse conceito. Técnicas como por exemplo o cache offline, _circuit breaker_, _master/slave_, _fallback_, etc.
