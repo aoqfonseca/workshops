@@ -1,6 +1,17 @@
 
 ==== Desempenho
 
-Existe quatro pilares que consideramos importante para definirmos um sistema de alto desempenho, escalável e resiliente. São eles: resiliência, tempo de resposta, vazão e quantidade de conexões ativas. Em cima disso, criamos um conjunto de notas e avaliações que nos permitem avaliar o quanto um sistema é robusto.
+Desempenho ou perfomance é um dos conceitos mais díficil de definir, pois não existe uma métrica clara que possamos usar, não existe um conceito próximo em outras ciências, enfim é algo bem subjetivo.
 
-Durante todo o material, sempre iremos utilizar e atuar dentro desses aspectos. Raramente existem outras características diferentes dessas que devemos levar em consideração. Quando isso acontece, indica que se tem algo bem específico.
+Desempenho é a capacidade de atender a maior quantidade de requisições possível, com um baixo tempo de resposta dada uma limitação de recursos (cpu, io, memória, etc). Para se medir o desempenho é preciso algo como CNTP (condições normais de temperatura e pressão).
+
+É muito difícil dizer se um sistema é perfomático, de alto desempenho, simplesmente dizendo que o request demorou 100ms, ou que aguentou 300 requests por segundo ou que atendeu a 200 conexões simultanêas.
+
+Vamos então estabeler que nossa CNTP é uma instancia small da Amazon e um sistema que escreve ou lê um dado simples do banco, ou similar. E que as faixas seriam:
+
+- 0 a 100 request/segundo : desempenho bem ruim
+- 100 a 500 request/segundo : baixo desempenho
+- 500 a 1000 request/segundo : desempenho mediano
+- acima de 1000 request/segundo : desempenho desejado (alto desempenho)
+
+Aqui o vamos buscar é estar sempre acima dos 1000 requests/segundo. Quanto aos demais números - conexões simultanêas, tempo de resposta - eles serão peça desse objeto, e em alguns casos específicos que falaremos mais a frente, serão a _estrela_. 
