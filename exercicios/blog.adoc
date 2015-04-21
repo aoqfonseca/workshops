@@ -1,0 +1,26 @@
+= Exercicios: Fazendo um blog
+:doctype: article
+:docinfo:
+:toc:
+:toclevels: 2
+
+Esse exercício nos ajudará a desenvolver alguns conceitos originais.
+
+== Primeiro passo
+
+Faça um blog. Nesse blog teremos a pagina do artigo e uma home onde encotraremos um resumo dos artigos publicados com link para sua página
+
+== Ficando famoso
+
+Bom o pessoal parece que gostou muito do seu blog. Os acessos estão aumentando. Precisamos melhorar um pouco nosso sistema pois agora parece que nosso volume de visitas aumentou.
+
+
+
+== chamando outros autores
+
+O pessoal gosta bastante do que escreve e dos assuntos. Já está dando para ganhar uma grana. Bom, podemos já chamar outras pessoas para escreverem também.
+
+
+== Sucesso total
+
+Agora a coisa ficou legal de vez. Estamos com acessos de 10 milhões de visitas únicas ao dia. E o dinheiro está entrando. O que vamos fazer para segurar essa pancada.

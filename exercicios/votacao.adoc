@@ -1,0 +1,28 @@
+= Exercicios: Votação BBB
+:doctype: article
+:docinfo:
+:toc:
+:toclevels: 2
+
+Esse exercício foca bastante nas técnicas de escalar e perfomar bem a escrita de dados.
+
+== Primeiro passo
+
+Faça um sistema simples onde dada duas opções a pessoa possa votar numa delas.
+
+== A brincadeira ficando séria
+
+O pessoal votou agora querem ver os resultados parciais.
+
+
+== Polêmico
+
+Dessa vez a votação entre os participantes será polêmica e bem dividida. Segundo os jornais, podemos ter uma votação record.
+
+== Resultado
+
+Precisamos processar bem rápido os resultados. O pessoal da tv não pode ficar esperando.
+
+== Humm tem coisa errada
+
+O pessoal decidiu que a votação tem que ser logada. Ou seja, o usuário precisa se identificar através de um sistema interno. A lógica é que precisamos checar um cookie de sessão e verificar através de uma api se o usuário está realmente logado e ok para votar e se já votou.
