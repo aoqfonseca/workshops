@@ -1,0 +1,13 @@
+
+=== Mito da Máquina Barata
+
+Um coisa muito interessante que sempre acompanho com o pessoal de desenvolvimento, desde que coisas como AWS, Heroku,  Google App engine, e similares, surgiram no mercado, que infra - máquina, servidores, etc - viraram _commodites_ . Ou seja, criar uma nova instancia de servidor é _barato_ .
+
+De certa forma isso faz algum sentido, porém essa barato é uma falácia e pode ser apenas temporário. Até que ponto, você pode simplesmente ir adicionando máquinas, ou cirando instancias mais robustaz para sua aplicação. Quanto adição de processadores impacta na melhoria do seu sistema? 
+
+Gosto sempre de citar o caso de algoritmos: Melhorias de algoritmos se mostraram mais eficientes do que comprar super computadores ... Gerou mais impacto investir no algoritmo do que na compra de máquina pois o ganho foi milhões de vezes maior. Antes que pense que isso não faz sentido para o seu _sisteminha_, pense novamente. É parte da missão desse material fazer com que quem lê pense diferente ao final da leitura. 
+
+Outra coisa, característica como tempo de resposta de nada adianta colocar mais máquinas. O que tem que ser feito é código. 
+
+NOTE: Nenhum processador, servidor, equipamento de rede, supera um bom código. 
+

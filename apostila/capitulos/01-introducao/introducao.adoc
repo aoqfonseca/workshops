@@ -11,6 +11,7 @@ NOTE: Não precisa ser grande ou ter um número imenso de acesso para se preocup
 include::section/basico.adoc[]
 include::section/sobre_perfomance.adoc[]
 include::section/sobre_resiliencia.adoc[]
+include::section/mito_maquina_barata.adoc[]
 
 === Resumo
 
