@@ -14,5 +14,7 @@ include::section/sobre_resiliencia.adoc[]
 
 === Resumo
 
-Entender que requisitos de robustez não são exclusividade de grandes sistemas e produtos. Hoje, no contexto que nos encontramos, é um requisito igual ao de testes, qualidade, etc.
-Conhecer os conceitos e como eles indicam é o primeiro passo para construir sistemas robustos.
+É importante perceber que requisitos de ser rápido, atender certo volume de acessos, entre outras coisas similares, não são exclusividades de sistemas grandes, ou sistemas de grandes empresas, ou só do Twitter ou do Facebook. Vários textos sobre usabilidade dizem que a cada segundo de esperaum grande número de usuários desistem. Demorar significa perdir dinheiro.
+
+Ser tolerante a falha é algo que deveria ser requisito de qualquer sistema. Nenhum sistema deveria falhar caso algo que esteja na sua _stack_ falhe. 
+Enfim, bons sistemas, independente se foram feitos para 5 ou 50 milhões deveriam se preocupar com resiliência, perfomance e robustez. 
