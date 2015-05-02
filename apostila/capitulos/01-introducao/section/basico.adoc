@@ -1,5 +1,6 @@
-=== Do começo
+=== Conceitos e bases
 
-Existe quatro pilares que consideramos importante para definirmos um sistema de alto desempenho, escalável e resiliente. São eles: resiliência, tempo de resposta, vazão e quantidade de conexões ativas. Em cima disso, criamos um conjunto de notas e avaliações que nos permitem avaliar o quanto um sistema é robusto.
+    É importante deixar claro o que não abordado. Não será tratado aqui coisas com qualidade, testes, testes automatizados, conceitos de MVP, etc. O que será tratado é o aspecto de entrega do serviço ao usuário final e isso envolve coisas como tempo de resposta, tratamento de falhas, retorno de falhas, monitoração, resiliência, robustez - suportar grande volume de acesso e não cair, etc.  Seguindo, para abordar esses temas, é necessário entender os conceitos que estão por trás, as medidas. É preciso definir um ponto de partida. 
 
-Durante todo o material, sempre iremos utilizar e atuar dentro desses aspectos. Raramente existem outras características diferentes dessas que devemos levar em consideração. Quando isso acontece, indica que se tem algo bem específico.
+    Sendo assim, nas próximas sessões, serão tratados os conceitos, os pontos base, como: O que é Desempenho? Vazão, mitos de perfomance, Resiliencia, tratamento de falhas, etc. O tópico de desempenho abordará sua definição, tempo de resposta, vazão e conexões. Ao tratar de Resiliência, o foco será em tratamento de falhas, retorno de falhas, transbordos e padrões de integração.
+
