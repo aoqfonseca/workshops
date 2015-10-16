@@ -1,25 +1,29 @@
 [[_introducao]]
 == Introdução
 
-Escrever sistemas rápidos, robustos, resilientes e eficazes não são um requisito exclusivo de produtos de grandes empresas, como portais de comprar, site de notícias, redes sociais, etc. Mesmo esses sites falham em alguns dos pontos e embora seu produto esteja começando e tenha poucos acessos, um tempo alto, ou uma falha, ou não suportar a carga de acessos - por menor que ela seja - pode ser fatal para a continuidade.
+A questão de perfomance e alto desempenho deixou de ser uma preocupação somente de grande portais ou sistemas de grandes empresas. Hoje qualquer produto pode ter milhões de acessos. Outro ponto importante, é que a grande maioria dos usuários não terá paciência de esperar segundos para sua página carregar ou seu app (mobile por exemplo) abrir esperando aquela resposta da api no backend. 
 
+Existe milhares de artigos na internet mostrando como as taxas de conversão (usuário acessar e comprar, usuário cotinuar navegando, etc) diminui a medida que o tempo de carregamento aumenta. 
 
-NOTE: Não precisa ser grande ou ter um número imenso de acesso para se preocupar com velocidade, resilienciar e vazão.
+Logo, tempo é dinheiro. 
 
-    
-Até um momento, a grande maioria dos desenvolvedores trabalhavam com sistemas que não envolvem grande volumes de acessos, ou são para um grupo restrito de usuários - como por exemplo intranets, ou tem um ambiente bem controlado, etc ...  _permitindo_ que não pensassem muito em questões como _desempenho_, _tratamento de falhas_, _robustez_, etc. Isso mudou muito com o mercado de produtos para a web. Uma grande parte dos profissionais está desenvolvendo sistema para web ou mobile (apps e backend), onde nada se sabe sobre suas conexões, navegadores, aparelhos por acessam, entre outras coisas. Outro ponto importante, é que a concorrência também aumentou muito. Se antes fazíasse sistemas para uma empresa e para um uso interno, hoje os produtos são para a internet e está suscetível a outros entrarem no seu modelo de negócio.    
+Outro ponto importante, que com a enorme quantidade de opções, a chance de "conseguir" o clique é pequena. Sendo assim, imagina se o seu sistema sai do ar?
 
-Somando a concorrência ao ambiente _inóspito_ que a web se tornou, qualquer detalhe é _vital_: um tempo de resposta alto, uma indisponibilidade, um design mal feito, podem determinar se terá sucesso ou fracaso. Por isso, qualquer seja o tamanho, mercado, objetivo, enfim, qualquer indicador que queira, se preocupar com robustez, qualidade, eficácia, resiliência é importante, para não dizer _caso de vida ou morte_. 
+Por tudo isso, preocupar-se com perfomance, resiliência, suporte a alto tráfego, etc é muito importante.
 
 Tendo isso em mente, abaixo serão descritos e explicados os pontos que servirão de base para todas as decisões que iremos tomar para termos sistemas de alto desempenho. Os pontos são os seguintes: Desempenho, Vazão, Resiliência e Falhas.
 
-include::section/basico.adoc[]
 include::section/mito_maquina_barata.adoc[]
+include::section/basico.adoc[]
 include::section/sobre_perfomance.adoc[]
 include::section/sobre_resiliencia.adoc[]
 
 === Resumo
 
-Como já foi dito na introdução, qualidade é peça importante. Ela pode determinar se o produto terá sucesso ou não. Qualidade não está só associada a sistemas que façam o que se pede - extritamente; ela está ligada também a como esse serviço é entregue para usuário final. Nada adianta ter uma site com designer excelente se ele leva 10 segundos para carregar a página; nada adianta ter um fluxo muito bem implementado se ele falha se uma _API_ estiver fora deixando a todos frustado. 
+Como já foi dito na introdução, qualidade é peça importante. Ela pode determinar se o produto terá sucesso ou não. Qualidade não está só associada a sistemas que façam o que se pede - extritamente; ela está ligada também a como esse serviço é entregue para usuário final. Nada adianta ter uma site com designer excelente se ele leva 10 segundos para carregar a página; nada adianta ter um fluxo muito bem implementado se ele falha se uma _API_ estiver fora deixando a todos frustado.
+
+Existe um excelente livro, Release It, do Nygard, que diz que precisamos também nos preocupar com a vida do sistema no ar. Sua capacidade de se recuperar, tolerar um determinado volume, etc. Simplesmente fazer TDD e entregar o código fonte para ser deployado, não é estar PRONTO.
 
 Robustez e eficácia são peças importantes no quebra-cabeça que compões bons aplicativos/sistemas. 
+
+NOTE: Pronto é pronto para os usuários usarem.

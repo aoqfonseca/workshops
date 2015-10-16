@@ -1,12 +1,57 @@
-Sistemas Robustos: Alta perfomance e Resiliência
-================================================
-:doctype: book
-:toc:
-:toclevels: 2
 
 [preface]
 == Prefácio
 
-Seja bem vindo. A intenção aqui é mostrar ao leitor de uma forma bem prática como podemos construir sistemas que sejam rápidos e robustos. Rápidos no sentido de responderem a uma grande vazão, em pouco tempo, etc. Robustos por em caso de qualquer problema conseguem se restabelecer, não param de funcionar se algo no sua _stack_ falhar, e outras coisas.
-Tentaremos sempre que possível, colocar um exemplo real, um exercício feito a partir de um problema real, nada de foo e bar, nada de Petshops e agendas de curso. E claro, se falharmos, fica a vontade nos corrigir. E nas próximas edições lhe daremos todo o crédito.
-Esse é uma material colaborativo. Estará aberto no github.
+Esse livro é sobre como construir sistemas de alto desempenho e robustez. Apresentar os conceitos envolvidos nessa tarefa e navegar por diversos padrões de solução que permeam o tópico como : 
+
+. Construção de sistemas com baixo tempo respostas
+. Construção de sistemas que são _tolerantes_ a falhas
+. Como suporte um grande volume de acesso
+. Como falhar de forma _graciosa_ e se recuperar depois disso 
+. Uso de caches, e maior entendimento dos modelos e como eles afetam a perfomance do seu sistema
+. etc ... 
+
+
+Criar sistema de alta perfomance e robustos vão além de tratar exceções e colocar cache nas aplicações. Criar sistemas realmente eficazes envolve entender uma série de aspectos que muitas vezes são negligenciados seja por custo ou por puro desconhecimento. Aspectos como vazão, tempo de resposta de um requisição (o tempo em cada camada, tempo de chamadas, pilhas, etc), tratamento de erros (não se está falando de simplesmente *trys e catchs* no código), trabalhar sem alguma parte funcionando, por que e quando usar caches e tipos de caches, etc. 
+
+
+=== Quem Deve Ler esse Livro
+
+Esse livro foi escrito pensando nos desenvolvedores, arquitetos e _devops_  que desejam criar sistemas para grandes volumes e/ou com a qualidade na entrega para o usuário final: 
+
+. Para o *desenvolvedores e arquitetos*, serão apresentandos padrões de soluções para cada necessidade e combinações; explicação de alguns conceitos que são importante para aumentar o entendimento do profissional quanto ao assunto. Tudo isso independente de linguagem, tecnologia, sistema operacional, biblioteca, etc. Conforme avançar na leitura isso ficará mais claro. Outro ponto será apresentado a forma como os autores enxergam a importância de um amplo entendimento de estrutura de dados e algoritmos para fazer bons sistemas.
+
+NOTE: Quem escala é arquitetura e modelagem, não linguagem. Linguagem é caixa de ferramenta.  
+
+. Para *devops e operações*, será explicado diversos tipos de montagem de pilhas de servidores para atingir um dado objeto, tipos de caches, configurações de layers, e outros pontos.
+
+NOTE : Não existe como falar de desempenho sem que fale em código e infrastrutura. As duas coisas andam juntos para que a entrega seja total 
+
+
+=== O que irá aprender com esse livro
+
+Os tópicos abordados aqui serão  
+
+. Entendimento de conceitos como vazão, conexões, resiliencia, robustez , etc
+. Medir a perfomance dos sistemas e quais números usar e o que eles indicam
+. Modelos de dados: nem sempre ser NoSQL é a melhor coisa. Tudo depende do seu problema
+. Caches
+. Padrões de soluções por problema: leitura - cache http, escrita com filas, pré-processamento, pós-processamento, etc
+. Servidores como podemo nos salvar: usando um nginx para servir estáticos, como _proxy-pass_, usando a função _stale_
+. Varnish e sua vcl
+. etc ... 
+
+=== O que não iremos falar
+
+Não será tratado aqui detalhes de configurações nem tutoriais de cada produto que for apresentando. Esse tipo de informação pode ser buscada na internet.  Outra coisa, é que nãoserá apresentado nenhum tipo de eficácia com uma linguagem específica, sempre que possível as soluções serão apresentadas de forma agnóstica de tecnologia ou linguagem. 
+Sempre que possível os exemplos irão estar em várias linguagnens.
+
+Esse não é um livro sobre algoritmos, nginx, varnish, java, python, ruby ou qualquer linguagem ou assunto citado. Como já dito, o foco está em criar sistemas de alta perfomance.
+
+
+=== Organização
+
+Esse livro está divido em capítulos. Os primeiros capítulos visam apresentar os conceitos e as bases para as dicusssões seguinte que serão apresentadas ao longo de todo o material. 
+Trechos de código estarão em destaque, e sempre que possível, os exemplos serão feitos em mais de um linguagem. 
+
+

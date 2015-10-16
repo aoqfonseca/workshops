@@ -1,0 +1,6 @@
+[[_linguagens-perfomance]]
+== Linguagens e Perfomance
+
+Queria dedicar uma parte só para falar sobre essa questão de linguagens. Uma coisa que semprer nos chamou atenção sobre perfomance, robustez e resiliência, é como as pessoas, erronamento associam isso a uso de determinadas linguagens, criando verdadeiras _guerras_ pelos foruns e listas de discussão da internet. 
+
+A questão é que linguagens, de modo metafórico, são como caixas de ferramentas. Elas são fonte de recursos que usamos para construir a nossa lógica e implementar nosso domínio. 

@@ -27,4 +27,4 @@ namespace :apostila do
     puts " -- PDF output at apostila.pdf"
   end
 end
-task :default => "book:build"
+task :default => "apostila:build"
