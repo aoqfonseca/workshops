@@ -1,0 +1,18 @@
+[[_algoritmos]]
+== Algoritmos e Estrutura de Dados
+
+Primeiro gostaria de equalizar as expectativas. Não prentendo ensinar algoritmos nem estrutura de dados. A questão master que temos que ter aqui é que uma boas escolha de algoritmo pode determinar se vai precisar um Pc ou de um super computador. 
+
+Muita gente neglencia essa questão. Muitos desenvolvedores delegam essa responsabilidade para o compilador acreditando que ele fará a escolha mais otimizada. 
+
+Bom, na maioria dos casos, isso será suficiente. 
+
+A questão que haverão casos que delegar não será uma boa opção e conhecer bem e os porques dos algoritmos e estruturas de dados será a grande diferença. Gosto de usar a linguagem Java como exemplo. Nele se encontram diversas implementações de collections: Arrays, ArrayLists, LinkedList, HashSets, Tree, etc. Quase a maioria das pessoas não conseguem dizer em qual caso cada uma se mostra melhor. Isso, novamente, pode ser a diferença que precisa para fazer o seu sistema atender ao tráfego. 
+
+O mesmo se aplica quando falamos de algoritmos.  Uma simples ordenação altera tudo que possa imaginar. 
+
+Vamos a um exemplo: tentar imaginar que você tem um sistema que consulta duas fontes distintas de dados. Depois precisa pegar essas duas fontes e mesclar e gerar uma só para o cliente. Caso real: lista de comentários e lista de votos positivos e negativos de cada comentário - ambos estavam em dois sistemas diferentes. Se simplesmente pegar as duas lista e ir varrendo para cada elemento de uma achar o equivalemente e ir mesclando, você pode acabar com uma complexidade monstra e simplesmente não dar conta. 
+
+
+Saber medir as complexidades, conhecer bem as estrutura de dados - seus pontos ffortes e fracos é determinante para a questão de perfomance. 
+

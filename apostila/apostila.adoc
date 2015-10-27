@@ -7,3 +7,4 @@ Sistemas Robustos: Alta perfomance e Resiliência
 
 include::capitulos/prefacio.adoc[]
 include::capitulos/01-introducao/introducao.adoc[]
+include::capitulos/02-linguagens-perfomance/linguagens-perfomance.adco[]

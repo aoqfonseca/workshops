@@ -1,6 +1,27 @@
 [[_linguagens-perfomance]]
 == Linguagens e Perfomance
 
-Queria dedicar uma parte só para falar sobre essa questão de linguagens. Uma coisa que semprer nos chamou atenção sobre perfomance, robustez e resiliência, é como as pessoas, erronamento associam isso a uso de determinadas linguagens, criando verdadeiras _guerras_ pelos foruns e listas de discussão da internet. 
+Queria dedicar uma parte só para falar sobre essa questão de linguagens. Uma coisa que sempre me chamou atenção sobre perfomance, robustez e resiliência, é como as pessoas, erronamento associam isso a uso de determinadas linguagens, criando verdadeiras _guerras_ pelos foruns e listas de discussão da internet. 
 
-A questão é que linguagens, de modo metafórico, são como caixas de ferramentas. Elas são fonte de recursos que usamos para construir a nossa lógica e implementar nosso domínio. 
+NOTE: Linguagens não escalam. Linguagens não atendem a milhões de requisições. Arquiteturas sim
+
+A questão é que linguagens, de modo metafórico, são como caixas de ferramentas. Elas são fonte de recursos que usamos para construir a nossa lógica e implementar nosso domínio. Podemos fazer bons sistemas em PHP, e péssimos sistemas com baixíssima perfomance em C. Claro que alguns recursos nativos de cada pode ajudar, entretanto, no final pode não ser um fator tão determinante se não tiver uma boa arquitetura.
+
+Uma vez disse para um pessoa que podemos construir pontes com papel e cola. Tudo depende da engenharia que vamos usar para chegar a tal resultado. É óbvio que o material não irá ajudar muito. Seria mais simples usar cimento e ferro.
+
+Reforçando: linguagens não fazem milagres. O fato de só instalar Golang, por exemplo não resolverá magicamento todos os seus problemas.
+
+== Linguagens como ferramentas
+
+Como já disse antes, linguagens por si próprias não fazem nada, nem resolvem problemas. É preciso que a gente as utilize da melhor forma possível. Embora, elas possam nos ajuda a ir mais rápido, ou ter menos preocupações.
+
+Vamos pensar na situação de um sistema que precisa consultar diversas apis para obter dados e a partir desses dados, fazer um série de operações e considerações para entregar um outro dado para o cliente. Exemplo: sistema de venda de produtos onde ele irá consultar a api de cadastro de cliente, api de pagamentos, api de vendas, api de estoque, etc. 
+
+Se você tentar fazer isso com as linguagens (java ou ruby por exemplo) você poderá ter um grande problema. Pois por natureza a maioria delas são sincronas.
+
+Para permitir um certo paralelismo - que nesse nosso caso é fundamental para permitir escalabilidade e perfomance - o trabalho será penoso para fazer modelos de threads, tratamentos de recebimentos de dados, etc.
+
+A questão é que existem linguagens que foram pensadas para resolver esse tipo de problema. Como também existe frameworks, libs, servidores, etc que também foram pensados para resolver esse tipo de problema. Exemplo: Python temos o tornado; temos a linguagem Go; ruby temos o celulose que é um lib para actor base, etc. 
+
+A lição que desejo deixar aqui é escolha a melhor ferramenta para o seu problema. Porém não ache que ela sozinha irá resolver. 
+
