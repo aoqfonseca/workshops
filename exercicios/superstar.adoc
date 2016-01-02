@@ -8,7 +8,7 @@ Você foi chamado para fazer o backend de uma app mobile que servirá ao program
 
 == Requisitos
 
- - A pessoa precisa se registra na votação.
+ - A pessoa precisa se registrar na votação.
  - A pessoa diz sim ou não para a banda daquele momento
  - A pessoal só pode votar uma vez
  - Tem um medidor on line que vai contado a percentagem de sim para a dada banda, logo não dá para esperar muito tempo pelo resultado

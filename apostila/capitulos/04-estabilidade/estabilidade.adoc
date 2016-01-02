@@ -1,0 +1,12 @@
+[[_estabilidade]]
+== Estabilidade
+
+Não tem como falar de perfomance sem falar em estabilidade.
+Seu sistema pode responder com tempos bem baixos, mas pode responder um erro. E isso é algo que não interessa a ninguém. Além disso, sistemas que não consideram a estabilidade pagam um preço alto de perfomance: um banco fora, um sistema terceiro fora, pode aumentar muito o tempo de resposta e com isso diminuir a vazão de atendimento como um todo, gerando filas e bloqueios.
+
+
+
+=== O que é estabilidade
+
+Estabilidade é a capacidade de um sistema continuar respondendo dentro do esperado por um período de tempo, sendo esse período quanto mais longo melhor.
+A alguns anos atrás, quando falávamos em tempo de funcionamento, tinhamos horas como base de medida. Atualmente, esse medida está meses, anos... Não é aceitavel qualquer interrupção do serviço.
